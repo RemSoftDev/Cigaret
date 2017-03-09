@@ -1,0 +1,245 @@
+﻿        .button {
+            height: 80px;
+            position: relative;
+            color: white;
+            width: 100px;
+            background-color: red;
+            padding: 0;
+            border: none;
+        }
+
+        .buttonAdd {
+            height: 42px;
+            position: relative;
+            color: white;
+            width: 58px;
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            font-size: x-large; font-weight: 700;
+        }
+
+        .buttonClear {
+            height: 42px;
+            position: relative;
+            color: white;
+            width: 185px;
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            font-size: x-large; font-weight: 700;
+        }
+
+        .buttonNoBorder {
+            position: relative;
+            color: white;
+            background-color: transparent;
+            padding: 0;
+            border: none;
+        }
+
+        .tr1 td {
+            width: 106px;
+            height: 101px;
+            color:whitesmoke;
+        }
+
+        .tr td {
+            width: 64px;
+            height: 43px;                          
+            
+            #border-image:url('../img/ButtonNumberAdds.png') repeat;
+        }
+
+.ButtonSettings{
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+.ButtonGraph{
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.ButtonAddMain
+{
+    background-repeat:no-repeat;
+    background-size:100%;
+
+    height: 100px;
+    position: relative;
+    color: white;
+    width: 100px;
+    background-color: red;
+    padding: 0;
+    border: none;
+}
+
+.ButtonBack
+{
+    width: 40px; 
+    height: 40px;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.PacketCost
+{
+    background-repeat:no-repeat;
+    background-size:100%;
+    width: 110px; 
+    height: 90px; 
+    margin-top:-30px;
+    font-size: x-large; font-weight: 700;
+}
+
+.TextForButtonCenter{
+     height:20px;
+     text-align:center;
+}
+
+.TdForBackButton{
+    width: 40px;
+    height: 40px;
+}
+
+.TrForBackButton{
+    width: 320px; 
+    height: 40px;
+}
+
+
+
+
+
+
+
+.TableGraph{
+    width: 320px;
+    height: 40px; 
+    color:whitesmoke;
+}
+
+.DivGraph{
+    width: 320px; 
+    height: 320px; 
+    background-color: black;
+}
+
+.TableKeyboard{
+    width: 320px; 
+    height: 160px;
+    border-collapse: collapse;
+    border: 1px solid red;
+}
+.TableKeyboard td {
+    border: 3px solid red;
+
+}
+
+.DivKeyboard{
+    width:320px; 
+    height:160px; 
+    background-color:grey; 
+    background-image:url('../img/DuttonNumberMain.png');   
+}
+
+.TableSettings{
+    width: 320px; 
+    height: 160px; 
+    color:whitesmoke;
+}
+
+.DivSettings{
+    margin-top:0px; 
+    width:320px; 
+    height:320px; 
+    background-color: black;
+}
+
+.TableMain{
+    width: 320px; 
+    height: 320px;
+}
+
+.DivMain{
+    width: 320px; 
+    height: 320px; 
+    background-color: black; 
+    visibility: visible;
+}
+
+.ButtonForCartsWeekMonthYear{
+    width: 80px; 
+    height: 30px;
+    margin-top:-20px;
+    
+}
+
+
+
+
+
+
+.PressedButtonImgCartsWeekMonthYear{
+    background-image: url('../img/ButtonAdd.png');
+}
+
+.NotPressedButtonImgCartsWeekMonthYear{
+    background-image: url('../img/DuttonNumberMain.png');
+}
+
+.PressedButtonImgBackButton{
+    background-image: url('../img/DuttonNumberMain.png');
+}
+
+.NotPressedButtonImgBackButton{
+    background-image: url('../img/ButtonBack.png');
+}
+
+
+.PressedButtonImgAddCigarette{
+    background-image: url('../img/DuttonNumberMain.png');
+}
+
+.NotPressedButtonImgAddCigarette{
+    background-image: url('../img/ButtonAdd.png');
+}
+
+
+.PressedButtonImgGraph{
+    background-image: url('../img/DuttonNumberMain.png');
+}
+
+.NotPressedButtonImgGraph{
+    background-image: url('../img/ButtonGraph.png');
+}
+
+
+.PressedButtonImgSettings{
+    background-image: url('../img/DuttonNumberMain.png');
+}
+
+.NotPressedButtonImgSettings{
+    background-image: url('../img/ButtonSettings.png');
+}
+
+
+.PressedButtonImgCountRed{
+    background-image: url('../img/DuttonNumberMain.png');
+}
+
+.NotPressedButtonImgCountRed{
+    background-image: url('../img/ButtonCountRed.png');
+}
+
+.ButtonCount{
+    background-image: url('/img/ButtonCount.png');
+    background-repeat:no-repeat;
+    background-size:100%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+

@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75179280-D624-4773-920D-0003D6318B46}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cigaret</RootNamespace>
+    <AssemblyName>Cigaret</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\My.css" />
+    <Content Include="img\ButtonAdd.png" />
+    <Content Include="img\ButtonBack.png" />
+    <Content Include="img\ButtonCount.png" />
+    <Content Include="img\ButtonCountRed.png" />
+    <Content Include="img\ButtonGraph.png" />
+    <Content Include="img\ButtonNumberAdds.png" />
+    <Content Include="img\ButtonSettings.png" />
+    <Content Include="img\DuttonNumberMain.png" />
+    <Content Include="js\dist\examples\ages.json" />
+    <Content Include="js\dist\examples\KCPsample4.csv" />
+    <Content Include="js\dist\examples\kcp_pyramid_by_age.php" />
+    <Content Include="js\dist\examples\quintiles.json" />
+    <Content Include="js\dist\examples\syntaxhighlighter\LGPL-LICENSE" />
+    <Content Include="js\dist\examples\syntaxhighlighter\MIT-LICENSE" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\dist\changes.txt" />
+    <Content Include="js\dist\copyright.txt" />
+    <Content Include="js\dist\docs\files\changes-txt.html" />
+    <Content Include="js\dist\docs\files\gpl-2-0-txt.html" />
+    <Content Include="js\dist\docs\files\images\background.jpg" />
+    <Content Include="js\dist\docs\files\images\basicline.png" />
+    <Content Include="js\dist\docs\files\images\basiclogaxis.png" />
+    <Content Include="js\dist\docs\files\images\basiclogoptions.png" />
+    <Content Include="js\dist\docs\files\images\basicoptions.png" />
+    <Content Include="js\dist\docs\files\images\dualaxis.png" />
+    <Content Include="js\dist\docs\files\images\logo.jpg" />
+    <Content Include="js\dist\docs\files\images\navdocs.png" />
+    <Content Include="js\dist\docs\files\images\navdocsover.png" />
+    <Content Include="js\dist\docs\files\images\navdownload.png" />
+    <Content Include="js\dist\docs\files\images\navdownloadover.png" />
+    <Content Include="js\dist\docs\files\images\navexamples.png" />
+    <Content Include="js\dist\docs\files\images\navexamplesover.png" />
+    <Content Include="js\dist\docs\files\images\navhome.png" />
+    <Content Include="js\dist\docs\files\images\navhomeover.png" />
+    <Content Include="js\dist\docs\files\images\new.png" />
+    <Content Include="js\dist\docs\files\images\sample3.png" />
+    <Content Include="js\dist\docs\files\images\samplesm.png" />
+    <Content Include="js\dist\docs\files\jqplot-axisLabelRenderer-js.html" />
+    <Content Include="js\dist\docs\files\jqplot-axisTickRenderer-js.html" />
+    <Content Include="js\dist\docs\files\jqplot-canvasGridRenderer-js.html" />
+    <Content Include="js\dist\docs\files\jqplot-core-js.html" />
+    <Content Include="js\dist\docs\files\jqplot-divTitleRenderer-js.html" />
+    <Content Include="js\dist\docs\files\jqplot-linearAxisRenderer-js.html" />
+    <Content Include="js\dist\docs\files\jqplot-lineRenderer-js.html" />
+    <Content Include="js\dist\docs\files\jqplot-markerRenderer-js.html" />
+    <Content Include="js\dist\docs\files\jqplot-shadowRenderer-js.html" />
+    <Content Include="js\dist\docs\files\jqplot-shapeRenderer-js.html" />
+    <Content Include="js\dist\docs\files\jqplot-themeEngine-js.html" />
+    <Content Include="js\dist\docs\files\jqplot-toImage-js.html" />
+    <Content Include="js\dist\docs\files\jqPlotCssStyling-txt.html" />
+    <Content Include="js\dist\docs\files\jqPlotOptions-txt.html" />
+    <Content Include="js\dist\docs\files\MIT-LICENSE-txt.html" />
+    <Content Include="js\dist\docs\files\optionsTutorial-txt.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-barRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-BezierCurveRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-blockRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-bubbleRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-canvasAxisLabelRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-canvasAxisTickRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-canvasOverlay-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-categoryAxisRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-ciParser-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-cursor-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-dateAxisRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-donutRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-dragable-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-enhancedLegendRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-funnelRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-highlighter-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-logAxisRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-mekkoAxisRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-mekkoRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-meterGaugeRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-ohlcRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-pieRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-pointLabels-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-pyramidAxisRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-pyramidGridRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-pyramidRenderer-js.html" />
+    <Content Include="js\dist\docs\files\plugins\jqplot-trendline-js.html" />
+    <Content Include="js\dist\docs\files\usage-txt.html" />
+    <Content Include="js\dist\docs\index.html" />
+    <Content Include="js\dist\docs\index\Classes.html" />
+    <Content Include="js\dist\docs\index\Files.html" />
+    <Content Include="js\dist\docs\index\Functions.html" />
+    <Content Include="js\dist\docs\index\General.html" />
+    <Content Include="js\dist\docs\index\General2.html" />
+    <Content Include="js\dist\docs\index\General3.html" />
+    <Content Include="js\dist\docs\index\General4.html" />
+    <Content Include="js\dist\docs\index\General5.html" />
+    <Content Include="js\dist\docs\index\General6.html" />
+    <Content Include="js\dist\docs\index\General7.html" />
+    <Content Include="js\dist\docs\index\Hooks.html" />
+    <Content Include="js\dist\docs\index\Properties.html" />
+    <Content Include="js\dist\docs\index\Properties2.html" />
+    <Content Include="js\dist\docs\index\Properties3.html" />
+    <Content Include="js\dist\docs\index\Properties4.html" />
+    <Content Include="js\dist\docs\index\Properties5.html" />
+    <Content Include="js\dist\docs\index\Properties6.html" />
+    <Content Include="js\dist\docs\javascript\main.js" />
+    <Content Include="js\dist\docs\javascript\searchdata.js" />
+    <Content Include="js\dist\docs\search\ClassesA.html" />
+    <Content Include="js\dist\docs\search\ClassesD.html" />
+    <Content Include="js\dist\docs\search\ClassesG.html" />
+    <Content Include="js\dist\docs\search\ClassesH.html" />
+    <Content Include="js\dist\docs\search\ClassesJ.html" />
+    <Content Include="js\dist\docs\search\ClassesL.html" />
+    <Content Include="js\dist\docs\search\ClassesS.html" />
+    <Content Include="js\dist\docs\search\ClassesSymbols.html" />
+    <Content Include="js\dist\docs\search\ClassesT.html" />
+    <Content Include="js\dist\docs\search\ClassesV.html" />
+    <Content Include="js\dist\docs\search\FilesJ.html" />
+    <Content Include="js\dist\docs\search\FunctionsC.html" />
+    <Content Include="js\dist\docs\search\FunctionsD.html" />
+    <Content Include="js\dist\docs\search\FunctionsG.html" />
+    <Content Include="js\dist\docs\search\FunctionsI.html" />
+    <Content Include="js\dist\docs\search\FunctionsM.html" />
+    <Content Include="js\dist\docs\search\FunctionsN.html" />
+    <Content Include="js\dist\docs\search\FunctionsQ.html" />
+    <Content Include="js\dist\docs\search\FunctionsR.html" />
+    <Content Include="js\dist\docs\search\FunctionsS.html" />
+    <Content Include="js\dist\docs\search\FunctionsZ.html" />
+    <Content Include="js\dist\docs\search\GeneralA.html" />
+    <Content Include="js\dist\docs\search\GeneralB.html" />
+    <Content Include="js\dist\docs\search\GeneralC.html" />
+    <Content Include="js\dist\docs\search\GeneralD.html" />
+    <Content Include="js\dist\docs\search\GeneralE.html" />
+    <Content Include="js\dist\docs\search\GeneralF.html" />
+    <Content Include="js\dist\docs\search\GeneralG.html" />
+    <Content Include="js\dist\docs\search\GeneralH.html" />
+    <Content Include="js\dist\docs\search\GeneralI.html" />
+    <Content Include="js\dist\docs\search\GeneralJ.html" />
+    <Content Include="js\dist\docs\search\GeneralL.html" />
+    <Content Include="js\dist\docs\search\GeneralM.html" />
+    <Content Include="js\dist\docs\search\GeneralN.html" />
+    <Content Include="js\dist\docs\search\GeneralO.html" />
+    <Content Include="js\dist\docs\search\GeneralP.html" />
+    <Content Include="js\dist\docs\search\GeneralQ.html" />
+    <Content Include="js\dist\docs\search\GeneralR.html" />
+    <Content Include="js\dist\docs\search\GeneralS.html" />
+    <Content Include="js\dist\docs\search\GeneralSymbols.html" />
+    <Content Include="js\dist\docs\search\GeneralT.html" />
+    <Content Include="js\dist\docs\search\GeneralU.html" />
+    <Content Include="js\dist\docs\search\GeneralV.html" />
+    <Content Include="js\dist\docs\search\GeneralW.html" />
+    <Content Include="js\dist\docs\search\GeneralX.html" />
+    <Content Include="js\dist\docs\search\GeneralY.html" />
+    <Content Include="js\dist\docs\search\GeneralZ.html" />
+    <Content Include="js\dist\docs\search\HooksA.html" />
+    <Content Include="js\dist\docs\search\HooksE.html" />
+    <Content Include="js\dist\docs\search\HooksJ.html" />
+    <Content Include="js\dist\docs\search\HooksP.html" />
+    <Content Include="js\dist\docs\search\NoResults.html" />
+    <Content Include="js\dist\docs\search\PropertiesA.html" />
+    <Content Include="js\dist\docs\search\PropertiesB.html" />
+    <Content Include="js\dist\docs\search\PropertiesC.html" />
+    <Content Include="js\dist\docs\search\PropertiesD.html" />
+    <Content Include="js\dist\docs\search\PropertiesE.html" />
+    <Content Include="js\dist\docs\search\PropertiesF.html" />
+    <Content Include="js\dist\docs\search\PropertiesG.html" />
+    <Content Include="js\dist\docs\search\PropertiesH.html" />
+    <Content Include="js\dist\docs\search\PropertiesI.html" />
+    <Content Include="js\dist\docs\search\PropertiesL.html" />
+    <Content Include="js\dist\docs\search\PropertiesM.html" />
+    <Content Include="js\dist\docs\search\PropertiesN.html" />
+    <Content Include="js\dist\docs\search\PropertiesO.html" />
+    <Content Include="js\dist\docs\search\PropertiesP.html" />
+    <Content Include="js\dist\docs\search\PropertiesR.html" />
+    <Content Include="js\dist\docs\search\PropertiesS.html" />
+    <Content Include="js\dist\docs\search\PropertiesT.html" />
+    <Content Include="js\dist\docs\search\PropertiesU.html" />
+    <Content Include="js\dist\docs\search\PropertiesV.html" />
+    <Content Include="js\dist\docs\search\PropertiesW.html" />
+    <Content Include="js\dist\docs\search\PropertiesX.html" />
+    <Content Include="js\dist\docs\search\PropertiesY.html" />
+    <Content Include="js\dist\docs\search\PropertiesZ.html" />
+    <Content Include="js\dist\docs\styles\1.css" />
+    <Content Include="js\dist\docs\styles\2.css" />
+    <Content Include="js\dist\docs\styles\main.css" />
+    <Content Include="js\dist\examples\ajax-loader.gif" />
+    <Content Include="js\dist\examples\area.html" />
+    <Content Include="js\dist\examples\axisLabelsRotatedText.html" />
+    <Content Include="js\dist\examples\axisLabelTests.html" />
+    <Content Include="js\dist\examples\axisScalingForceTickAt.html" />
+    <Content Include="js\dist\examples\bandedLine.html" />
+    <Content Include="js\dist\examples\bar-charts.html" />
+    <Content Include="js\dist\examples\barLineAnimated.html" />
+    <Content Include="js\dist\examples\barTest.html" />
+    <Content Include="js\dist\examples\bezierCurve.html" />
+    <Content Include="js\dist\examples\blockPlot.html" />
+    <Content Include="js\dist\examples\bubble-plots.html" />
+    <Content Include="js\dist\examples\bubbleChart.html" />
+    <Content Include="js\dist\examples\candlestick-charts.html" />
+    <Content Include="js\dist\examples\candlestick.html" />
+    <Content Include="js\dist\examples\canvas-overlay.html" />
+    <Content Include="js\dist\examples\colorpicker\images\bar-alpha.png" />
+    <Content Include="js\dist\examples\colorpicker\images\bar-opacity.png" />
+    <Content Include="js\dist\examples\colorpicker\images\bar-pointer.png" />
+    <Content Include="js\dist\examples\colorpicker\images\bar.png" />
+    <Content Include="js\dist\examples\colorpicker\images\map-opacity.png" />
+    <Content Include="js\dist\examples\colorpicker\images\map-pointer.png" />
+    <Content Include="js\dist\examples\colorpicker\images\map.png" />
+    <Content Include="js\dist\examples\colorpicker\images\preview-opacity.png" />
+    <Content Include="js\dist\examples\colorpicker\images\ui-colorpicker.png" />
+    <Content Include="js\dist\examples\colorpicker\index.html" />
+    <Content Include="js\dist\examples\colorpicker\jquery.colorpicker.css" />
+    <Content Include="js\dist\examples\colorpicker\jquery.colorpicker.js" />
+    <Content Include="js\dist\examples\cursor-highlighter.html" />
+    <Content Include="js\dist\examples\customHighlighterCursorTrendline.html" />
+    <Content Include="js\dist\examples\dashboardWidget.html" />
+    <Content Include="js\dist\examples\dashedLines.html" />
+    <Content Include="js\dist\examples\data-renderers.html" />
+    <Content Include="js\dist\examples\date-axes.html" />
+    <Content Include="js\dist\examples\dateAxisLogAxisZooming.html" />
+    <Content Include="js\dist\examples\dateAxisRenderer.html" />
+    <Content Include="js\dist\examples\draw-rectangles.html" />
+    <Content Include="js\dist\examples\example.js" />
+    <Content Include="js\dist\examples\example.min.js" />
+    <Content Include="js\dist\examples\examples.css" />
+    <Content Include="js\dist\examples\examples.min.css" />
+    <Content Include="js\dist\examples\fillBetweenLines.html" />
+    <Content Include="js\dist\examples\hiddenPlotsInTabs.html" />
+    <Content Include="js\dist\examples\images\bar-alpha.png" />
+    <Content Include="js\dist\examples\images\bar-opacity.png" />
+    <Content Include="js\dist\examples\images\bar-pointer.png" />
+    <Content Include="js\dist\examples\images\bar.png" />
+    <Content Include="js\dist\examples\images\logo.jpg" />
+    <Content Include="js\dist\examples\images\map-opacity.png" />
+    <Content Include="js\dist\examples\images\map-pointer.png" />
+    <Content Include="js\dist\examples\images\map.png" />
+    <Content Include="js\dist\examples\images\preview-opacity.png" />
+    <Content Include="js\dist\examples\images\ui-colorpicker.png" />
+    <Content Include="js\dist\examples\index.html" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\jquery-ui.css" />
+    <Content Include="js\dist\examples\jquery-ui\css\smoothness\jquery-ui.min.css" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\jquery-ui-1.9pre.css" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\jquery-ui-1.9pre.min.css" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\jquery-ui.css" />
+    <Content Include="js\dist\examples\jquery-ui\css\ui-lightness\jquery-ui.min.css" />
+    <Content Include="js\dist\examples\jquery-ui\js\jquery-ui.min.js" />
+    <Content Include="js\dist\examples\jquery-ui\js\jquery.effects.blind.min.js" />
+    <Content Include="js\dist\examples\jquery-ui\js\jquery.effects.core.min.js" />
+    <Content Include="js\dist\examples\jsondata.txt" />
+    <Content Include="js\dist\examples\kcp.print.js" />
+    <Content Include="js\dist\examples\kcp_area.html" />
+    <Content Include="js\dist\examples\kcp_area2.html" />
+    <Content Include="js\dist\examples\kcp_cdf.html" />
+    <Content Include="js\dist\examples\kcp_engel.html" />
+    <Content Include="js\dist\examples\kcp_lorenz.html" />
+    <Content Include="js\dist\examples\kcp_pdf.html" />
+    <Content Include="js\dist\examples\kcp_pyramid.html" />
+    <Content Include="js\dist\examples\kcp_pyramid2.html" />
+    <Content Include="js\dist\examples\kcp_pyramid_by_age.html" />
+    <Content Include="js\dist\examples\kcp_quintiles.html" />
+    <Content Include="js\dist\examples\line-charts.html" />
+    <Content Include="js\dist\examples\mekkoCharts.html" />
+    <Content Include="js\dist\examples\meterGauge.html" />
+    <Content Include="js\dist\examples\multipleBarColors.html" />
+    <Content Include="js\dist\examples\nav.inc" />
+    <Content Include="js\dist\examples\pie-donut-charts.html" />
+    <Content Include="js\dist\examples\pieTest.html" />
+    <Content Include="js\dist\examples\pieTest2.js" />
+    <Content Include="js\dist\examples\pieTest4.html" />
+    <Content Include="js\dist\examples\point-labels.html" />
+    <Content Include="js\dist\examples\resizablePlot.html" />
+    <Content Include="js\dist\examples\rotated-tick-labels.html" />
+    <Content Include="js\dist\examples\rotatedTickLabelsZoom.html" />
+    <Content Include="js\dist\examples\selectorSyntax.html" />
+    <Content Include="js\dist\examples\smoothedLine.html" />
+    <Content Include="js\dist\examples\syntaxhighlighter\scripts\shAutoloader.js" />
+    <Content Include="js\dist\examples\syntaxhighlighter\scripts\shAutoloader.min.js" />
+    <Content Include="js\dist\examples\syntaxhighlighter\scripts\shBrushJScript.js" />
+    <Content Include="js\dist\examples\syntaxhighlighter\scripts\shBrushJScript.min.js" />
+    <Content Include="js\dist\examples\syntaxhighlighter\scripts\shBrushXml.js" />
+    <Content Include="js\dist\examples\syntaxhighlighter\scripts\shBrushXml.min.js" />
+    <Content Include="js\dist\examples\syntaxhighlighter\scripts\shCore.js" />
+    <Content Include="js\dist\examples\syntaxhighlighter\scripts\shCore.min.js" />
+    <Content Include="js\dist\examples\syntaxhighlighter\styles\shCore.css" />
+    <Content Include="js\dist\examples\syntaxhighlighter\styles\shCore.min.css" />
+    <Content Include="js\dist\examples\syntaxhighlighter\styles\shCoreDefault.css" />
+    <Content Include="js\dist\examples\syntaxhighlighter\styles\shCoreDefault.min.css" />
+    <Content Include="js\dist\examples\syntaxhighlighter\styles\shThemeDefault.css" />
+    <Content Include="js\dist\examples\syntaxhighlighter\styles\shThemeDefault.min.css" />
+    <Content Include="js\dist\examples\syntaxhighlighter\styles\shThemejqPlot.css" />
+    <Content Include="js\dist\examples\syntaxhighlighter\styles\shThemejqPlot.min.css" />
+    <Content Include="js\dist\examples\theming.html" />
+    <Content Include="js\dist\examples\topbanner.inc" />
+    <Content Include="js\dist\examples\waterfall.html" />
+    <Content Include="js\dist\examples\waterfall2.html" />
+    <Content Include="js\dist\examples\yahooData.js" />
+    <Content Include="js\dist\examples\yahooData.min.js" />
+    <Content Include="js\dist\examples\zoom1.html" />
+    <Content Include="js\dist\examples\zooming.html" />
+    <Content Include="js\dist\examples\zoomOptions.html" />
+    <Content Include="js\dist\examples\zoomProxy.html" />
+    <Content Include="js\dist\excanvas.js" />
+    <Content Include="js\dist\excanvas.min.js" />
+    <Content Include="js\dist\gpl-2.0.txt" />
+    <Content Include="js\dist\jqPlotCssStyling.txt" />
+    <Content Include="js\dist\jqPlotOptions.txt" />
+    <Content Include="js\dist\jquery.jqplot.css" />
+    <Content Include="js\dist\jquery.jqplot.js" />
+    <Content Include="js\dist\jquery.jqplot.min.css" />
+    <Content Include="js\dist\jquery.jqplot.min.js" />
+    <Content Include="js\dist\jquery.js" />
+    <Content Include="js\dist\jquery.min.js" />
+    <Content Include="js\dist\MIT-LICENSE.txt" />
+    <Content Include="js\dist\optionsTutorial.txt" />
+    <Content Include="js\dist\plugins\jqplot.barRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.barRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.BezierCurveRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.BezierCurveRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.blockRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.blockRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.bubbleRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.bubbleRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.canvasAxisLabelRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.canvasAxisLabelRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.canvasAxisTickRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.canvasAxisTickRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.canvasOverlay.js" />
+    <Content Include="js\dist\plugins\jqplot.canvasOverlay.min.js" />
+    <Content Include="js\dist\plugins\jqplot.canvasTextRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.canvasTextRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.categoryAxisRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.categoryAxisRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.ciParser.js" />
+    <Content Include="js\dist\plugins\jqplot.ciParser.min.js" />
+    <Content Include="js\dist\plugins\jqplot.cursor.js" />
+    <Content Include="js\dist\plugins\jqplot.cursor.min.js" />
+    <Content Include="js\dist\plugins\jqplot.dateAxisRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.dateAxisRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.donutRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.donutRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.dragable.js" />
+    <Content Include="js\dist\plugins\jqplot.dragable.min.js" />
+    <Content Include="js\dist\plugins\jqplot.enhancedLegendRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.enhancedLegendRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.funnelRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.funnelRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.highlighter.js" />
+    <Content Include="js\dist\plugins\jqplot.highlighter.min.js" />
+    <Content Include="js\dist\plugins\jqplot.json2.js" />
+    <Content Include="js\dist\plugins\jqplot.json2.min.js" />
+    <Content Include="js\dist\plugins\jqplot.logAxisRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.logAxisRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.mekkoAxisRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.mekkoAxisRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.mekkoRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.mekkoRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.meterGaugeRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.meterGaugeRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.mobile.js" />
+    <Content Include="js\dist\plugins\jqplot.mobile.min.js" />
+    <Content Include="js\dist\plugins\jqplot.ohlcRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.ohlcRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.pieRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.pieRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.pointLabels.js" />
+    <Content Include="js\dist\plugins\jqplot.pointLabels.min.js" />
+    <Content Include="js\dist\plugins\jqplot.pyramidAxisRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.pyramidAxisRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.pyramidGridRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.pyramidGridRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.pyramidRenderer.js" />
+    <Content Include="js\dist\plugins\jqplot.pyramidRenderer.min.js" />
+    <Content Include="js\dist\plugins\jqplot.trendline.js" />
+    <Content Include="js\dist\plugins\jqplot.trendline.min.js" />
+    <Content Include="js\dist\README.txt" />
+    <Content Include="js\dist\usage.txt" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="js\jquery-2.1.1.min.js" />
+    <Content Include="js\My.js" />
+    <Content Include="README.txt" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\dist\examples\colorpicker\i18n\" />
+    <Folder Include="js\dist\examples\jquery-ui\css\ui-lightness\images-1.9pre\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55282</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55282/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

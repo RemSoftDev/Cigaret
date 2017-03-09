@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../js/dist/jquery.jqplot.css" />
+    <link rel="stylesheet" type="text/css" href="../css/My.css" />
+</head>
+<body style="background-color:none;">
+
+    <!--   Main page   -->
+    <div id="MainPage" class="DivMain">
+        <table class="TableMain">
+
+            <!--   First row  -->
+            <tr class="tr1">
+
+                <!--   Button Settings  -->
+                <td>
+                    <div>
+                        <button id="Settings" class="button ButtonSettings NotPressedButtonImgSettings"></button>
+                    </div>
+                    <div class="TextForButtonCenter">Settings</div>
+                </td>
+
+                <td></td>
+
+                <!--   Button Graph  -->
+                <td>
+                    <div>
+                        <button id="Graph" class="button ButtonGraph NotPressedButtonImgGraph"></button>
+                    </div>
+                    <div class="TextForButtonCenter">Graph</div>
+                </td>
+            </tr>
+
+            <!--   Second row  -->
+            <tr class="tr1">
+
+                <td></td>
+
+                <!--   Button Add cigarette  -->
+                <td>
+                    <div><button id="Add" class="ButtonAddMain NotPressedButtonImgAddCigarette"></button></div>
+                </td>
+
+                <td></td>
+            </tr>
+
+            <!--   Thierd row  -->
+            <tr class="tr1">
+
+                <!--   Show Today amount  -->
+                <td>
+                    <div class="ButtonCount" id="TodayAmount">
+                        <span id="TodayAmountNum">0</span>
+                    </div>
+                    <div class="TextForButtonCenter">Today amount</div>
+                </td>
+
+                <td></td>
+
+                <!--   Show Today cost  -->
+                <td>
+                    <div class="ButtonCount" id="TodayCost">
+                        <span id="TodayCostNum">0</span>
+                    </div>
+                    <div class="TextForButtonCenter">Today cost</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--   Settings Page   -->
+    <div id="SettingsPage" class="DivSettings">
+        <div style="width:320px; height:160px;">
+            <table class="TableSettings">
+
+                <!--   First row  -->
+                <tr class="TrForBackButton">
+                    <!--   Back button  -->
+                    <td class="TdForBackButton">
+                        <div>
+                            <button id="BackSettings" class="buttonNoBorder ButtonBack NotPressedButtonImgBackButton"></button>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <!--   Second row  -->
+                <tr style="width: 320px; height: 120px; text-align: center;">
+
+                    <!--   Show Packet Cost  -->
+                    <td style="width: 160px; height: 120px;">
+                        <div>
+                            <button id="PacketCost" class="buttonNoBorder PacketCost NotPressedButtonImgCountRed"><span id="PacketCostNum">1</span></button>
+                        </div>
+                        <div class="TextForButtonCenter">Packet Cost</div>
+                    </td>
+
+                    <!--   Show Cigarette in Packet  -->
+                    <td style="width: 160px; height: 120px;">
+                        <div>
+                            <button id="NumberOfCigarette" class="buttonNoBorder PacketCost NotPressedButtonImgCountRed"><span id="NumberOfCigaretteNum">1</span></button>
+                        </div>
+                        <div class="TextForButtonCenter">Cigarette in Packet</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--   Keyboard  -->
+        <div class="DivKeyboard">
+            <table class="TableKeyboard" >
+
+                <!--   First row, buttons del, point, clear  -->
+                <tr class="tr">
+                    <td><button id="Del" class="buttonAdd">Del</button></td>
+                    <td><button id="Point" class="buttonAdd">.</button></td>
+                    <td colspan="3"><button id="Clear" class="buttonClear">Clear</button></td>
+                </tr>
+
+                <!--   Second row, buttons 0-4  -->
+                <tr class="tr">
+                    <td><button id="b0" class="buttonAdd">0</button></td>
+                    <td><button id="b1" class="buttonAdd">1</button></td>
+                    <td><button id="b2" class="buttonAdd">2</button></td>
+                    <td><button id="b3" class="buttonAdd">3</button></td>
+                    <td><button id="b4" class="buttonAdd">4</button></td>
+                </tr>
+
+                <!--   Thierd row, buttons 5-9  -->
+                <tr class="tr">
+                    <td><button id="b5" class="buttonAdd">5</button></td>
+                    <td><button id="b6" class="buttonAdd">6</button></td>
+                    <td><button id="b7" class="buttonAdd">7</button></td>
+                    <td><button id="b8" class="buttonAdd">8</button></td>
+                    <td><button id="b9" class="buttonAdd">9</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!--   Graph Page   -->
+    <div id="GraphPage" class="DivGraph">
+        <table class="TableGraph">
+
+            <!--   First row  -->
+            <tr class="TrForBackButton">
+
+                <!--   Back button  -->
+                <td class="TdForBackButton">
+                    <div>
+                        <button id="BackGraph" class="buttonNoBorder ButtonBack NotPressedButtonImgBackButton"></button>
+                    </div>
+                </td>
+
+                <td style="width:40px"></td>
+
+                <!--   Button for show charts for week, month, year  -->
+                <td><button id="GraphWeek" class="buttonNoBorder ButtonForCartsWeekMonthYear NotPressedButtonImgCartsWeekMonthYear"> Week </button></td>
+                <td><button id="GraphMonth" class="buttonNoBorder ButtonForCartsWeekMonthYear NotPressedButtonImgCartsWeekMonthYear"> Month </button></td>
+                <td><button id="GraphYear" class="buttonNoBorder ButtonForCartsWeekMonthYear NotPressedButtonImgCartsWeekMonthYear"> Year </button></td>
+            </tr>
+
+            <!--   Second row  -->
+            <tr style="width: 320px; height: 280px; text-align: center;">
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--   Charts for week, month, year  -->
+    <div id="chartdivMonth" style="margin-top: -285px; height: 280px; width: 310px; visibility: visible; position: absolute; "></div>
+    <div id="chartdivWeek" style="margin-top: -285px; height: 280px; width: 310px; visibility: visible; position: absolute; "></div>
+    <div id="chartdivYear" style="margin-top: -285px; height: 280px; width: 310px; visibility: visible; position: absolute;"></div>
+
+    <!--   Tech Chart for working plugin. Don't change, don't use  -->
+    <div id="chartdiv1" style="height: 400px; width: 300px; visibility: hidden; "></div>
+
+    <script src="/js/jquery-2.1.1.min.js"></script>
+   
+    <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="/dist/excanvas.js"></script><![endif]-->
+    <script language="javascript" type="text/javascript" src="../js/dist/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../js/dist/jquery.jqplot.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/dist/jquery.jqplot.css" />
+
+    <script type="text/javascript" src="../js/dist/plugins/jqplot.highlighter.min.js"></script>
+    <script type="text/javascript" src="../js/dist/plugins/jqplot.cursor.min.js"></script>
+    <script type="text/javascript" src="../js/dist/plugins/jqplot.dateAxisRenderer.min.js"></script>
+    <script src="/js/My.js"></script>
+
+</body>
+
+</html>
